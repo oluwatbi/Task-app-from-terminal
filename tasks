@@ -5,19 +5,18 @@
 use Symfony\Component\Console\Application;
 require 'vendor/autoload.php';
 
-$app = new Application('Task App', '1.0');
+$app = new Application('Terminal todo App', '1.0');
 
 try
 {
     $pdo = new PDO('mysql:host=localhost;dbname=tasks', 'root', 'secret');
-    //$pdo = new PDO('sqlite3:db.sqlite');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDO $exception)
 {
     echo 'Could not connect to database';
-   exit(1);
+    exit(1);
 }
 
 $dbHook = new Acme\DatabaseHook($pdo);
