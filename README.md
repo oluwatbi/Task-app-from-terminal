@@ -1,9 +1,9 @@
-### Setup
+### Setup :rocket:
 1. clone the repo
 2. run `composer install`
 3. create your database
 	* `create database todo`
- 
+	
 > create tables
  ```
 CREATE TABLE tasks(
@@ -28,4 +28,4 @@ run `./tasks command`
    * `completed`
    
 ### TODO
-
+- [ ] Link to blog
