@@ -1,8 +1,6 @@
 {
   "require": {
-    "symfony/console": "4.3",
-    "guzzlehttp/guzzle": "^6.3",
-    "ext-pdo": "*"
+    "symfony/console": "4.3"
   },
 
   "autoload": {
