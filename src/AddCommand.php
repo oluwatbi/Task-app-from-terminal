@@ -22,5 +22,7 @@ class AddCommand extends Command{
 			'insert into tasks(description) values(:description)',
 			compact('description')
 	     );
+
+		$output->writeln('<info>New Task added!</info>');
 	}
 }
