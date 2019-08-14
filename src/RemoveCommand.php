@@ -7,12 +7,12 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class CompleteCommand extends Command
+class RemoveCommand extends Command
 {
 	public function configure()
 	{
-		$this->setName('complete')
-			->setDescription('finish a task by id')
+		$this->setName('remove')
+			->setDescription('remove a task by id')
 			->addArgument('id', InputArgument::REQUIRED);
 	}
 

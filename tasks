@@ -22,6 +22,6 @@ catch (Exception $exception)
 $dbHook = new Acme\DatabaseHook($pdo);
 $app->add(new Acme\ShowCommand($dbHook));
 $app->add(new Acme\AddCommand($dbHook));
-$app->add(new Acme\CompleteCommand($dbHook));
+$app->add(new Acme\RemoveCommand($dbHook));
 
 $app->run();
