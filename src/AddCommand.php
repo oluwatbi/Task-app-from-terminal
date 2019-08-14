@@ -24,5 +24,6 @@ class AddCommand extends Command{
 	     );
 
 		$output->writeln('<info>New Task added!</info>');
+		$this->showTasks($output);
 	}
 }
