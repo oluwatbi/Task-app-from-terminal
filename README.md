@@ -1,5 +1,5 @@
 ### Setup :rocket:
-1. clone the repo
+1. clone the repo  
 2. run `composer install`
 3. create your database
 	* `create database todo`
@@ -22,10 +22,10 @@ description TEXT NOT NULL
 ### Usage
 run `./tasks command`
 
-> commands
+> command
    * `show` shows the list of tasks
    * `add` this requires argument `./tasks add "your reminder goes here"`
-   * `completed`
+   * `remove` remove task by id `./tasks remove id`
    
 ### TODO
 - [ ] Link to blog
